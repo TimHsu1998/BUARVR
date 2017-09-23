@@ -24,9 +24,11 @@ class NewsController < ApplicationController
   end
 
   def update
-    @news = news.find(params[:id])
+    @news = News.find(params[:id])
     if @news.update(news_params)
       redirect_to news_index_path
+    else
+      render :edit
     end
   end
 
