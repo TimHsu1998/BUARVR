@@ -1,0 +1,9 @@
+<h1> Add a news </h1>
+
+<%= simple_form_for @news do |f| %>
+
+<%= f.input :title %>
+<%= f.input :content %>
+
+  <%= f.submit "Submit" %>
+<% end %>

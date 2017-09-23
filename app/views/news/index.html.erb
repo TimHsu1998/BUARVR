@@ -1,0 +1,24 @@
+<% if current_user && current_user.is_admin %>
+  <div class="pull-right">
+    <%= link_to("Add a news", new_news_path, :class => "btn btn-default" ) %>
+  </div>
+<% end %>
+
+<table class="table table-bordered">
+  <% @news.each do |news| %>
+    <tr>
+      <td><%= news.title %>
+      <td>
+        <%= link_to("Edit", edit_news_path(news), :class => "btn btn-default")%>
+        <%= link_to("Delete", news_path(news), :method => :delete,
+                        :class => "btn btn-default", :data => { :confirm => "Are you sure?" })%>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= news.content %>
+      </td>
+    </tr>
+  <% end %>
+</table>
