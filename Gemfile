@@ -61,3 +61,4 @@ gem 'nokogiri'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
+gem "simple_calendar", "~> 2.0"

@@ -1,0 +1,10 @@
+<h1> Edit a event </h1>
+
+<%= simple_form_for @meeting do |f| %>
+
+<%= f.input :name %>
+<%= f.input :start_time %>
+<%= f.input :end_time %>
+
+  <%= f.submit "Submit" %>
+<% end %>
