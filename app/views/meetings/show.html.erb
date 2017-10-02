@@ -18,6 +18,8 @@
       <!-- location -->
       <p class="details">
         <p class="address">
+          <%= @meeting.start_time.strftime("%m/%d, %I:%M %p")%>~<%= @meeting.end_time.strftime("%I:%M %p")%>
+          <br>
           <i class="fa fa-location-arrow fa-fx" aria-hidden="true"></i>
           <%= @meeting.address %>
         </p>
