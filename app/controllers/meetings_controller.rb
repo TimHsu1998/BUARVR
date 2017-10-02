@@ -18,6 +18,10 @@ class MeetingsController < ApplicationController
 
   def show
     @meeting = Meeting.find(params[:id])
+    @hash = Gmaps4rails.build_markers(@meeting) do |meeting, marker|
+      marker.lat meeting.latitude
+      marker.lng meeting.longitude
+    end
   end
 
   def edit
@@ -42,6 +46,6 @@ class MeetingsController < ApplicationController
   private
 
   def meeting_params
-    params.require(:meeting).permit(:name, :intro, :address, :start_time, :end_time)
+    params.require(:meeting).permit(:name, :intro, :address, :start_time, :end_time, :latitude, :longitude)
   end
 end

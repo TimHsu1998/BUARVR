@@ -63,3 +63,6 @@ gem 'devise'
 gem 'simple_form'
 gem "simple_calendar", "~> 2.0"
 gem "font-awesome-rails"
+gem 'geocoder'
+gem 'gmaps4rails'
+gem 'underscore-rails'
