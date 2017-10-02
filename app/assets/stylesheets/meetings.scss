@@ -2,9 +2,15 @@
 
 #job-info {
 
-
+  padding: 1em;
   text-align: center;
   position: relative;
+
+  .job-time {
+    font-family: Arial Black;
+    font-size: 2rem;
+    padding: 1em 0em 0.5em 0em;
+  }
 
   .job-title {
     font-family: Arial Black;
@@ -44,19 +50,6 @@
     border-radius: .35rem;
   }
 
-  .icon{
-    padding-left: 1em;
-  }
-
-  .job-logo{
-    margin: 10px;
-    border-radius: 80%;
-  }
-
-  .button{
-    margin: 3px 0px 30px 0px;
-    vertical-align: middle;
-  }
 }
 
 //---------Google Map---------

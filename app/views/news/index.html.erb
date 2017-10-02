@@ -11,11 +11,6 @@
     <section id="job-info">
       <% @news.each do |news| %>
         <!-- title -->
-        <div class="job-time">
-          <tr>
-            <td><%= news.created_at.strftime("%b.%d,%Y")%></td>
-          </tr>
-        </div>
         <div class="job-title">
 
           <tr>
@@ -29,13 +24,21 @@
           </tr>
         </div>
 
-        <!-- description -->
-        <p class="description">
-          <%= simple_format(news.content) %>
-        </p>
+        <div class="job-time">
+          <tr>
+            <td><%= news.created_at.strftime("%b.%d,%Y")%></td>
+          </tr>
+        </div>
 
-        <hr>
-        <br>
+        <!-- description -->
+        <div class="col-md-12">
+          <div class="description">
+            <%= simple_format(news.content) %>
+            <hr>
+            <br>
+          </div>
+        </div>
+
       <% end %>
     </section>
   </div>
