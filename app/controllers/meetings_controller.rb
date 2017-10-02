@@ -16,6 +16,10 @@ class MeetingsController < ApplicationController
     end
   end
 
+  def show
+    @meeting = Meeting.find(params[:id])
+  end
+
   def edit
     @meeting = Meeting.find(params[:id])
   end
@@ -38,6 +42,6 @@ class MeetingsController < ApplicationController
   private
 
   def meeting_params
-    params.require(:meeting).permit(:name, :start_time, :end_time)
+    params.require(:meeting).permit(:name, :intro, :address, :start_time, :end_time)
   end
 end

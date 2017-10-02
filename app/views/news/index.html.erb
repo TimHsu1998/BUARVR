@@ -4,21 +4,39 @@
   </div>
 <% end %>
 
-<table class="table table-bordered">
-  <% @news.each do |news| %>
-    <tr>
-      <td><%= news.title %>
-      <td>
-        <%= link_to("Edit", edit_news_path(news), :class => "btn btn-default")%>
-        <%= link_to("Delete", news_path(news), :method => :delete,
-                        :class => "btn btn-default", :data => { :confirm => "Are you sure?" })%>
 
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <%= news.content %>
-      </td>
-    </tr>
-  <% end %>
-</table>
+
+<div class="container-fluid">
+  <div class="col-md-12">
+    <section id="job-info">
+      <% @news.each do |news| %>
+        <!-- title -->
+        <div class="job-time">
+          <tr>
+            <td><%= news.created_at.strftime("%b.%d,%Y")%></td>
+          </tr>
+        </div>
+        <div class="job-title">
+
+          <tr>
+            <td><%= news.title %>
+            <td>
+              <%= link_to("Edit", edit_news_path(news), :class => "btn btn-default")%>
+              <%= link_to("Delete", news_path(news), :method => :delete,
+                              :class => "btn btn-default", :data => { :confirm => "Are you sure?" })%>
+
+            </td>
+          </tr>
+        </div>
+
+        <!-- description -->
+        <p class="description">
+          <%= simple_format(news.content) %>
+        </p>
+
+        <hr>
+        <br>
+      <% end %>
+    </section>
+  </div>
+</div>

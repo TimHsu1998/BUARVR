@@ -1,3 +1,60 @@
-// Place all the styles related to the meetings controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+//---------job info---------
+
+#job-info {
+
+
+  text-align: center;
+  position: relative;
+
+  .job-title {
+    font-family: Arial Black;
+    font-size: 3rem;
+    padding: 3em 0em 0.5em 0em;
+  }
+
+  .description{
+    text-align: justify;
+    max-width: 550px;
+    font-size: 1.5rem;
+    padding: 0.3em 0em 0.3em 0em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .address {
+    font-size: 1.5rem;
+    padding: 0.3em 0em 0.3em 0em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .details {
+    font-size: 1.5rem;
+    padding: 0.3em 0em 0.3em 0em;
+  }
+
+  .job-info {
+    background-color: #f8f8f8;
+    display: inline-block;
+    margin: 0 1% 0;
+    padding: 2rem;
+    -moz-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+    box-shadow: 0px 0px 3px 0px rgba(4,6,9,0.25);
+    border-radius: .35rem;
+  }
+
+  .icon{
+    padding-left: 1em;
+  }
+
+  .job-logo{
+    margin: 10px;
+    border-radius: 80%;
+  }
+
+  .button{
+    margin: 3px 0px 30px 0px;
+    vertical-align: middle;
+  }
+}

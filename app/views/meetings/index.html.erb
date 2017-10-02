@@ -4,12 +4,16 @@
   </div>
 <% end %>
 
-<%= month_calendar events: @meetings do |date, meetings| %>
-  <%= date %>
+<div class="row">
+  <div class="col-md-12">
+    <%= month_calendar events: @meetings do |date, meetings| %>
+      <%= date.strftime("%m/%d") %>
 
-  <% meetings.each do |meeting| %>
-    <div>
-      <%= meeting.name %>
-    </div>
-  <% end %>
-<% end %>
+      <% meetings.each do |meeting| %>
+        <div>
+          <%= link_to(meeting.name, meeting_path(meeting)) %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
