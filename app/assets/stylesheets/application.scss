@@ -17,3 +17,90 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+
+//---------Features---------
+.caption {
+    margin: 30px;
+    text-align: center;
+    top: 20px;
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    margin-top: 60px;
+}
+
+  .img-thumbnail {
+    border: 0 none;
+    width: 100px; //定製圖片寬度
+    height: 100px; //定製圖片高度
+}
+
+.content-section-a {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    text-align: center;
+    padding: 5rem 0 5rem 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.section-heading {
+    font-family: Arial Black;
+    margin-bottom: 15px;
+}
+
+.lead {
+    font-family: Hectiva;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+hr {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+//---------Testomonial---------
+#testimony {
+    padding: 5rem 0 5rem 0;
+    text-align: center;
+    position: relative;
+
+    .testimony p {
+      text-align: justify;
+      font-style: italic;
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+
+    .testimony {
+      width: 22.75%;
+      display: inline-block;
+      margin: 0 1% 0;
+      padding: 2.5rem 1.5%;
+      text-align: center;
+      -webkit-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+      -moz-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+      box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+      border-radius: .35rem;
+    }
+
+    .button_wrapper {
+      text-align: center;
+      margin: 4rem 0;
+      display: inline-block;
+    }
+}
