@@ -1,3 +1,148 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//---------Cover---------
+
+.jumbotron {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 110px;
+}
+
+.title {
+    max-width: 700px;//最大寬度
+    margin-top: 0;
+    margin-bottom: 0;//這樣就可以緊接息面的描述文字
+    border-top-right-radius: 3px;//右上角圓邊
+    border-top-left-radius: 3px;//左上角圓邊
+}
+
+.jumbotron h2, .jumbotron .h2 {
+    font-family:Georgia;
+    text-align: justify;
+    font-size: 35pt;
+    color: white; //字體顏色
+    padding: 0px 50px 0 50px;//上50px，左右20px，下0
+}
+
+.jumbotron p {
+    font-family:Georgia;
+    margin: 0;//上下左右margin為0
+    font-size: 24px;//字體大小
+    max-width: 700px;//最大寬度
+    padding: 20px 50px 20px 50px;//上下左右padding為20px
+    text-align:justify;
+    color: white;//字體顏色
+    border-bottom-right-radius: 3px;//右下角圓邊
+    border-bottom-left-radius: 3px;//左下角圓邊
+}
+
+.btn-secondary {
+    color: #fff;//字體顏色
+    border-color: white;//邊框顏色
+}
+
+.btn-secondary:hover {
+    border-color: white;//鼠標放置在btn上的邊框顏色
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    padding: 8px 16px;//通過padding來決定btn的大小
+    font-size: 20px;//btn文字大小
+    letter-spacing: 1px;//調整文字間距
+    border-radius: 3px;//btn圓角
+}
+
+//---------Features---------
+.caption {
+    margin: 30px;
+    text-align: center;
+    top: 20px;
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    margin-top: 60px;
+    border: none;
+}
+
+  .img-thumbnail {
+    border: 0 none;
+    width: 100px; //定製圖片寬度
+    height: 100px; //定製圖片高度
+}
+
+.content-section-a {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    text-align: center;
+    padding: 5rem 0 5rem 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.section-heading {
+    font-family: Arial Black;
+    margin-bottom: 15px;
+}
+
+.lead {
+    font-family: Hectiva;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+hr {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+//---------Testomonial---------
+#testimony {
+    padding: 5rem 0 5rem 0;
+    text-align: center;
+    position: relative;
+
+    .testimony p {
+      text-align: justify;
+      font-style: italic;
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+
+    .testimony {
+      width: 22.75%;
+      display: inline-block;
+      margin: 0 1% 0;
+      padding: 2.5rem 1.5%;
+      text-align: center;
+      -webkit-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+      -moz-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+      box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+      border-radius: .35rem;
+    }
+
+    .button_wrapper {
+      text-align: center;
+      margin: 4rem 0;
+      display: inline-block;
+    }
+}
+//-----------second background
+.alignCenter
+{
+    text-align: center;
+    margin: 100px;
+}
