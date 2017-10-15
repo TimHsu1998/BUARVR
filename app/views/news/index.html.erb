@@ -7,39 +7,41 @@
 
 
 <div class="container-fluid">
-  <div class="col-md-12">
-    <section id="job-info">
-      <% @news.each do |news| %>
+  <section id="job-info">
+    <% @news.each do |news| %>
+      <div class="col-md-12">
         <!-- title -->
-        <div class="job-title">
-
-          <tr>
-            <td><%= news.title %>
-            <td>
-              <%= link_to("Edit", edit_news_path(news), :class => "btn btn-default")%>
-              <%= link_to("Delete", news_path(news), :method => :delete,
-                              :class => "btn btn-default", :data => { :confirm => "Are you sure?" })%>
-
-            </td>
-          </tr>
-        </div>
-
-        <div class="job-time">
-          <tr>
-            <td><%= news.created_at.strftime("%b.%d,%Y")%></td>
-          </tr>
-        </div>
-
-        <!-- description -->
-        <div class="col-md-12">
-          <div class="description">
-            <%= simple_format(news.content) %>
-            <hr>
-            <br>
+        <div class="col-md-6">
+          <div align="center">
+            <% if news.image.present? %>
+              <%= image_tag(news.image.thumb.url, class: "thumbnail") %>
+            <% end %>
           </div>
         </div>
+        <div class="col-md-6">
+          <div class="job-title">
+            <h2><%= news.title %>
+                <%= link_to("Edit", edit_news_path(news), :class => "btn btn-default")%>
+                <%= link_to("Delete", news_path(news), :method => :delete,
+                                :class => "btn btn-default", :data => { :confirm => "Are you sure?" })%>
 
-      <% end %>
-    </section>
-  </div>
+            </h1>
+          </div>
+
+          <div class="job-time">
+              <p><%= news.created_at.strftime("%b.%d,%Y")%></p>
+          </div>
+
+          <!-- description -->
+          <div class="col-md-12">
+            <div class="description">
+              <p><%= simple_format(news.content) %></p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <br>
+      </div>
+    <% end %>
+  </section>
 </div>
