@@ -1,3 +1,48 @@
 // Place all the styles related to the news controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//---------news info---------
+
+#news-info {
+
+  padding: 1em;
+  text-align: center;
+  position: relative;
+
+  .news-title {
+    font-family:Georgia;
+    font-size: 3rem;
+  }
+
+  .news-time {
+    font-family:Georgia;
+    font-size: 2rem;
+  }
+
+  .description{
+    font-family:Georgia;
+    text-align: justify;
+    max-width: 550px;
+    font-size: 1.5rem;
+    padding: 0.3em 0em 0.3em 0em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .details {
+    font-family:Georgia;
+    font-size: 1.5rem;
+    padding: 0.3em 0em 0.3em 0em;
+  }
+
+}
+
+//---------Google Map---------
+#map{
+    text-align: center;
+    width:500px;
+    height:250px;
+    margin: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
