@@ -3,14 +3,14 @@ CarrierWave.configure do |config|
     config.fog_provider = 'fog'
     config.fog_credentials = {
       provider:              'AWS',
-      aws_access_key_id:     ENV["AKIAJW2UJEO2REBEGW6Q"],
+      aws_access_key_id:     ENV["AWS_ACCESS_KEY_ID"],
 
-      aws_secret_access_key: ENV["x91V1p+etezC51qlEJDUNSkch/O1RHPsWls5n9VG"],
+      aws_secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"],
 
-      region:                ENV["us-east-1"]
+      region:                ENV["AWS_REGION"]
 
     }
-    config.fog_directory  = ENV["buarvr"]
+    config.fog_directory  = ENV["AWS_BUCKET_NAME"]
 
 
   else
