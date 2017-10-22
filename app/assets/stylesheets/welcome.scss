@@ -5,6 +5,7 @@
 //---------Cover---------
 
 .jumbotron {
+    background-image: url("http://preview.ibb.co/ckDFWR/Picture4.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 110px;
@@ -36,25 +37,45 @@
     color: white;//字體顏色
     border-bottom-right-radius: 3px;//右下角圓邊
     border-bottom-left-radius: 3px;//左下角圓邊
+
 }
 
 .btn-secondary {
     color: #fff;//字體顏色
-    border-color: white;//邊框顏色
+    border: 3px;
 }
 
 .btn-secondary:hover {
     border-color: white;//鼠標放置在btn上的邊框顏色
 }
 
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg> .btn {
     padding: 8px 16px;//通過padding來決定btn的大小
     font-size: 20px;//btn文字大小
     letter-spacing: 1px;//調整文字間距
     border-radius: 3px;//btn圓角
+    border-color: white;
 }
 
 //---------Features---------
+.content-section-a {
+    text-align: center;
+    padding: 5rem 5rem 5rem 5rem;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading-a {
+    font-family: Arial Black;
+    margin-bottom: 25px;
+}
+
+.lead {
+    font-family: Hectiva;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
 .caption {
     margin: 30px;
     text-align: center;
@@ -69,40 +90,24 @@
 }
 
   .img-thumbnail {
-    border: 0 none;
-    width: 100px; //定製圖片寬度
-    height: 100px; //定製圖片高度
+    background-color: white;
 }
 
-.content-section-a {
+.content-section-b {
     text-align: center;
     padding: 40px 0;
     background-color: #f8f8f8;
 }
 
-.content-section-b {
-    text-align: center;
-    padding: 5rem 0 5rem 0;
-    border-bottom: 1px solid #e7e7e7;
-}
-
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
-}
-
-.section-heading {
+.section-heading-b {
     font-family: Arial Black;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
-.lead {
-    font-family: Hectiva;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 30px;
+.section-heading-c {
+    font-family: Arial Black;
 }
+
 
 hr {
     margin-top: 3em;
@@ -116,8 +121,7 @@ hr {
     position: relative;
 
     .testimony p {
-      text-align: justify;
-      font-style: italic;
+      font-family: Hectiva;
       margin-top: 2em;
       margin-bottom: 1em;
     }
@@ -141,6 +145,14 @@ hr {
     }
 }
 //-----------second background
+.jumbotron-second {
+    background-image: url("http://preview.ibb.co/caBPQm/Picture1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
 .alignCenter
 {
     text-align: center;
