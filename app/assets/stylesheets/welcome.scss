@@ -40,31 +40,34 @@
 
 }
 
-.btn-secondary {
-    color: #fff;//字體顏色
-    border: 3px;
-    border-color: white;//鼠標放置在btn上的邊框顏色
-}
 
-.btn-secondary:hover {
-    border-color: white;//鼠標放置在btn上的邊框顏色
-}
-
-.btn-lg> .btn {
-    padding: 8px 16px;//通過padding來決定btn的大小
-    font-size: 20px;//btn文字大小
-    letter-spacing: 1px;//調整文字間距
+.lp-block-1-button {
     border-radius: 3px;//btn圓角
-    border-color: white;
-}
+    background: transparent;
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 30px 13px;
+    margin-right: 10px;
+    margin-top: 20px;
+    }
+.lp-block-1-button:hover{
+    background-color: white;
+    text-decoration: none;
+  }
 
 //---------Features---------
 .content-section-a {
-    margin-top:-3rem;
     text-align: center;
+    margin-top: -3rem;
     padding: 5rem 5rem 5rem 5rem;
+    border-bottom: 1px solid #e7e7e7;
     background-color: #f8f8f8;
-    //border-bottom: 1px solid #e7e7e7;
 }
 
 .section-heading-a {
@@ -99,7 +102,6 @@
 .content-section-b {
     text-align: center;
     padding: 40px 0;
-    background-color: white;
     //background-color: #f8f8f8;
 }
 
