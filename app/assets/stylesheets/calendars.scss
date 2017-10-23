@@ -58,8 +58,19 @@
      padding: 1em 0em 0.5em 0em;
      margin-bottom: 30px;
    }
+
    .calendar-title{
      font-size: 5rem;
+     color: #BDBDBD;
+   }
+
+   .calendar-last{
+     text-align: left;
+     color: #BDBDBD;
+   }
+
+   .calendar-next{
+     text-align: right;
      color: #BDBDBD;
    }
 
@@ -67,10 +78,6 @@
     height: 80px;
   }
 
-
-  .wday-0 {background: #1F2024;box-shadow: 3px 3px 5px black;}
-  .wday-6 {background: #1F2024;box-shadow: 3px 3px 5px black;}
-  //.wday-1 .wday-2 .wday-3 .wday-4 .wday-5{background: #212121;}
 
   .today {
   }
@@ -81,14 +88,27 @@
   .start-date {}
 
   .prev-month {
-
+    color: #757575;
   }
   .next-month {
-
+    color: #757575;
   }
   .current-month {
     color: #BDBDBD;
   }
+
+  .wday-0 {
+    background: #1F2024;
+    box-shadow: 3px 3px 5px black;
+    color: #757575;
+  }
+  .wday-6 {
+    background: #1F2024;
+    box-shadow: 3px 3px 5px black;
+    color: #757575;
+  }
+  //.wday-1 .wday-2 .wday-3 .wday-4 .wday-5{background: #212121;}
+
 
   .has-events {}
 }

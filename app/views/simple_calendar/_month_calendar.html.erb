@@ -1,35 +1,55 @@
 <div class="greybackground">
-<div class="simple-calendar">
-  <div class="calendar-heading">
-    <!--%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view %-->
-    <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
-    <!--%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view %-->
-  </div>
+  <div class="simple-calendar">
+    <div class="calendar-heading">
+      <!--%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view %-->
+      <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
+      <!--%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view %-->
+    </div>
 
-  <table class="table">
+    <table class="table">
 
-      <tr style="color: #BDBDBD;">
-        <% date_range.slice(0, 7).each do |day| %>
-          <th><%= t('date.day_names')[day.wday] %></th>
-        <% end %>
-      </tr>
+        <tr style="color: #BDBDBD;">
+          <!--
+          <% date_range.slice(0, 7).each  do |day| %>
+            <th><%= t('date.day_names')[day.wday] %></th>
+          <% end %>
+        -->
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th style="color: #757575;">Saturday</th>
+          <th style="color: #757575;">Sunday</th>
+        </tr>
 
 
 
-      <% date_range.each_slice(7) do |week| %>
-        <tr>
-          <% week.each do |day| %>
-            <%= content_tag :td, class: calendar.td_classes_for(day) do %>
-              <% if defined?(Haml) && respond_to?(:block_is_haml?) && block_is_haml?(block) %>
-                <% capture_haml(day, sorted_events.fetch(day, []), &block) %>
-              <% else %>
-                <% block.call day, sorted_events.fetch(day, []) %>
+        <% date_range.each_slice(7) do |week| %>
+          <tr>
+            <% week.each do |day| %>
+              <%= content_tag :td, class: calendar.td_classes_for(day) do %>
+                <% if defined?(Haml) && respond_to?(:block_is_haml?) && block_is_haml?(block) %>
+                  <% capture_haml(day, sorted_events.fetch(day, []), &block) %>
+                <% else %>
+                  <% block.call day, sorted_events.fetch(day, []) %>
+                <% end %>
               <% end %>
             <% end %>
-          <% end %>
-        </tr>
-      <% end %>
+          </tr>
+        <% end %>
 
-  </table>
-</div>
+    </table>
+
+    <div class="calendar-heading">
+      <p class="calendar-last col-md-6">
+        <%= link_to t('simple_calendar.previous', default: '<-- Previous Month'),
+            calendar.url_for_previous_view, style: "color: #BDBDBD;"%>
+      </p>
+      <p class="calendar-next col-md-6">
+        <%= link_to t('simple_calendar.next', default: 'Next Month -->'),
+            calendar.url_for_next_view, style: "color: #BDBDBD;" %>
+      </p>
+    </div>
+  </div>
 </div>
