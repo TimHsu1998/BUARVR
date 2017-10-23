@@ -1,19 +1,21 @@
-<% if current_user && current_user.is_admin %>
-  <div class="pull-right">
-    <%= link_to("Add a event", new_meeting_path, :class => "btn btn-default" ) %>
-  </div>
-<% end %>
+<div class="background">
+  <% if current_user && current_user.is_admin %>
+    <div class="pull-right">
+      <%= link_to("Add a event", new_meeting_path, :class => "btn btn-default" ) %>
+    </div>
+  <% end %>
 
-<div class="row">
-  <div class="col-md-12">
-    <%= month_calendar events: @meetings do |date, meetings| %>
-      <%= date.strftime("%m/%d") %>
+  <div class="row">
+    <div class="col-md-12">
+      <%= month_calendar events: @meetings do |date, meetings| %>
+        <%= date.strftime("%m/%d") %>
 
-      <% meetings.each do |meeting| %>
-        <div>
-          <%= link_to(meeting.name, meeting_path(meeting)) %>
-        </div>
+        <% meetings.each do |meeting| %>
+          <div>
+            <%= link_to(meeting.name, meeting_path(meeting)) %>
+          </div>
+        <% end %>
       <% end %>
-    <% end %>
+    </div>
   </div>
 </div>

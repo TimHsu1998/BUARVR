@@ -8,6 +8,7 @@
     box-sizing: border-box;
     max-width: 100%;
     width: 100%;
+
   }
 
   tr {
@@ -16,33 +17,34 @@
 
   th {
     padding: 6px;
-    border-bottom: 2px solid rgb(221, 221, 221);
-    border-collapse: collapse;
-    border-left: 1px solid rgb(221, 221, 221);
-    border-right: 1px solid rgb(221, 221, 221);
-    border-top: 0px none rgb(51, 51, 51);
-    box-sizing: border-box;
-    text-align: left;
+    vertical-align: top;
+    width: 14%;
+    border: 1px hidden #313131;
+    border-bottom: 1px solid #313131;
+    text-align: center;
+    font-family:Georgia;
   }
 
   td {
+    font-family:Georgia;
     padding: 6px;
     vertical-align: top;
     width: 14%;
+    border: 1px solid #313131;
 
-    border: 1px solid #ddd;
-    border-top-color: rgb(221, 221, 221);
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-right-color: rgb(221, 221, 221);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-bottom-color: rgb(221, 221, 221);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left-color: rgb(221, 221, 221);
-    border-left-style: solid;
-    border-left-width: 1px;
+    //border: 1px solid #ddd;
+    //border-top-color: rgb(221, 221, 221);
+    //border-top-style: solid;
+    //border-top-width: 1px;
+    //border-right-color: rgb(221, 221, 221);
+    //border-right-style: solid;
+    //border-right-width: 1px;
+    //border-bottom-color: rgb(221, 221, 221);
+    //border-bottom-style: solid;
+    //border-bottom-width: 1px;
+    //border-left-color: rgb(221, 221, 221);
+    //border-left-style: solid;
+    //border-left-width: 1px;
   }
 
   padding: 3em;
@@ -50,29 +52,27 @@
   position: relative;
 
   .calendar-heading{
-    text-align: center;
-    font-family: Arial Black;
-    font-size: 2rem;
-    padding: 1em 0em 0.5em 0em;
-  }
-  .calendar-title{
-    font-size: 3rem;
-  }
+     text-align: left;
+     font-family:Georgia;
+     font-size: 2rem;
+     padding: 1em 0em 0.5em 0em;
+     margin-bottom: 30px;
+   }
+   .calendar-title{
+     font-size: 5rem;
+     color: #BDBDBD;
+   }
 
   .day {
     height: 80px;
   }
 
-  .wday-0 {}
-  .wday-1 {}
-  .wday-2 {}
-  .wday-3 {}
-  .wday-4 {}
-  .wday-5 {}
-  .wday-6 {}
+
+  .wday-0 {background: #1F2024;box-shadow: 3px 3px 5px black;}
+  .wday-6 {background: #1F2024;box-shadow: 3px 3px 5px black;}
+  //.wday-1 .wday-2 .wday-3 .wday-4 .wday-5{background: #212121;}
 
   .today {
-    background: #FFFFC0
   }
 
   .past {}
@@ -81,12 +81,19 @@
   .start-date {}
 
   .prev-month {
-    color: #E0E0E0;
+
   }
   .next-month {
-    color: #E0E0E0;
+
   }
-  .current-month {}
+  .current-month {
+    color: #BDBDBD;
+  }
 
   .has-events {}
+}
+//------------------------------------------
+.greybackground{
+  background-color: #18191D;
+  border-radius: 10px;//btn圓角
 }
