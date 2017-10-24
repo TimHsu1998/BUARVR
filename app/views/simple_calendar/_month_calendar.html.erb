@@ -8,7 +8,7 @@
 
     <table class="table">
 
-        <tr style="color: #BDBDBD;">
+        <tr style="color: #EEEEEE;">
           <!--
           <% date_range.slice(0, 7).each  do |day| %>
             <th><%= t('date.day_names')[day.wday] %></th>
@@ -44,11 +44,11 @@
     <div class="calendar-heading">
       <p class="calendar-last col-md-6">
         <%= link_to t('simple_calendar.previous', default: '<-- Previous Month'),
-            calendar.url_for_previous_view, style: "color: #BDBDBD;"%>
+            calendar.url_for_previous_view, style: "color: #EEEEEE;"%>
       </p>
       <p class="calendar-next col-md-6">
         <%= link_to t('simple_calendar.next', default: 'Next Month -->'),
-            calendar.url_for_next_view, style: "color: #BDBDBD;" %>
+            calendar.url_for_next_view, style: "color: #EEEEEE;" %>
       </p>
     </div>
   </div>
