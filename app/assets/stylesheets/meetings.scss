@@ -2,6 +2,7 @@
 //---------background----------
 .background {
     background-image: url("https://i.imgur.com/ZsqShDV.jpg");
+    //background-color: #FAFAFA;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 150px;
@@ -16,16 +17,24 @@
   padding: 1em;
   text-align: center;
   position: relative;
+  font-family:Georgia;
+  background-color: #FAFAFA;
 
   .meeting-title {
-    font-family: Arial Black;
     font-size: 3rem;
     padding: 3em 0em 0.5em 0em;
+    font-weight: bold;
     }
 
   .meeting-time {
-    font-family: Arial Black;
     font-size: 2rem;
+  }
+
+  .address {
+    font-size: 1.5rem;
+    padding: 1em 0em 1em 0em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .description{
@@ -35,19 +44,6 @@
     padding: 0.3em 0em 0.3em 0em;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .address {
-    font-size: 1.5rem;
-    padding: 0.3em 0em 0.3em 0em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-  .details {
-    font-size: 1.5rem;
-    padding: 0.3em 0em 0.3em 0em;
   }
 
 }

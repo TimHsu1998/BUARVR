@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+//----------for all---------
+.lead {
+    font-family: Hectiva;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
 //---------Cover---------
 
 .jumbotron {
@@ -12,37 +21,37 @@
 }
 
 .title {
-    max-width: 700px;//最大寬度
+    max-width: 700px;
     margin-top: 0;
-    margin-bottom: 0;//這樣就可以緊接息面的描述文字
-    border-top-right-radius: 3px;//右上角圓邊
-    border-top-left-radius: 3px;//左上角圓邊
+    margin-bottom: 0;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
 
 .jumbotron h2, .jumbotron .h2 {
     font-family:Georgia;
     text-align: justify;
     font-size: 35pt;
-    color: white; //字體顏色
-    padding: 0px 50px 0 50px;//上50px，左右20px，下0
+    color: white;
+    padding: 0px 50px 0 50px;
 }
 
 .jumbotron p {
     font-family:Georgia;
-    margin: 0;//上下左右margin為0
-    font-size: 24px;//字體大小
-    max-width: 700px;//最大寬度
-    padding: 20px 50px 20px 50px;//上下左右padding為20px
+    margin: 0;
+    font-size: 24px;
+    max-width: 700px;
+    padding: 20px 50px 20px 50px;
     text-align:justify;
-    color: white;//字體顏色
-    border-bottom-right-radius: 3px;//右下角圓邊
-    border-bottom-left-radius: 3px;//左下角圓邊
+    color: white;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 
 }
 
 
 .lp-block-1-button {
-    border-radius: 3px;//btn圓角
+    border-radius: 3px;
     background: transparent;
     display: inline-block;
     border: 2px solid #fff;
@@ -61,7 +70,7 @@
     text-decoration: none;
   }
 
-//---------Features---------
+//---------Introduction---------
 .content-section-a {
     text-align: center;
     margin-top: -3rem;
@@ -75,34 +84,10 @@
     margin-bottom: 25px;
 }
 
-.lead {
-    font-family: Hectiva;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-
-.caption {
-    margin: 30px;
-    text-align: center;
-    top: 20px;
-}
-
-.thumbnail {
-    border: 0 none;
-    box-shadow: none;
-    margin-top: 60px;
-    border: none;
-}
-
-  .img-thumbnail {
-    background-color: white;
-}
-
+//-----Benefits(What we provide)-----
 .content-section-b {
     text-align: center;
     padding: 40px 0;
-    //background-color: #f8f8f8;
 }
 
 .section-heading-b {
@@ -110,24 +95,16 @@
     margin-bottom: 40px;
 }
 
-.section-heading-c {
+.section-feature-b {
     font-family: Arial Black;
 }
 
-
-hr {
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
-
-//---------Testomonial---------
 #testimony {
     padding: 5rem 0 5rem 0;
     text-align: center;
     position: relative;
 
     .testimony p {
-      font-family: Hectiva;
       margin-top: 2em;
       margin-bottom: 1em;
     }
@@ -150,7 +127,8 @@ hr {
       display: inline-block;
     }
 }
-//-----------second background
+
+//---------Second Cover---------
 .jumbotron-second {
     background-image: url("https://i.imgur.com/SVZg1BU.jpg");
     background-repeat: no-repeat;
@@ -163,4 +141,31 @@ hr {
 {
     text-align: center;
     margin: 100px;
+}
+
+//---------Q&A---------
+
+.caption {
+    margin: 10 50 10 50px;
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    border: none;
+}
+
+.content-section-c {
+    padding: 40px 0;
+}
+
+.section-title-c {
+    text-align: center;
+    font-family: Arial Black;
+}
+
+.section-heading-c {
+    font-family:Georgia;
+    font-weight: bold;
+    margin-bottom: 10px;
 }

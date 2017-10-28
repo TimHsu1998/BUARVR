@@ -1,19 +1,16 @@
 //---------Navbar---------
 .navbar-brand > img {
-    display: inline-block; //圖片和鏈接文字顯示在同一行
-    margin-right: 10px; //圖片和鏈接文字拉開一點距離
-    width: 180px; //定製圖片寬度
-    height: 50px; //定製圖片高度
-}
-
-.form-group {
-    margin: 8px 2px 2px 2px;
+    display: inline-block;
+    margin-right: 10px;
+    width: 225px;
+    height: 50px;
 }
 
 #navbar {
     .navbar {
-      background-color: #4B4641;
-      border-color: #233140;
+      background-color: #424242;
+      border-color: #424242;
+      //background-color: #4B4641;
       margin-bottom: 0;
       padding-bottom: 15px;
 
@@ -21,29 +18,29 @@
 
     @media (min-width: 768px) {
       .navbar {
-          border-radius: 0;//圆角为0
+          border-radius: 0;
       }
     }
 
     .navbar .navbar-brand {
-      color: white;//字体颜色
+      color: white;
       font-size: 25pt;
-      padding: 15px 30px;//上下10px,左右15px
-      line-height: 30px;//文字行高
+      padding: 15px 30px;
+      line-height: 30px;
     }
 
 
     .navbar .navbar-nav {
-      color: white;//字体颜色
+      color: white;
       font-size: 12pt;
-      padding: 20px 10px 10px 10px;//上下10px,左右15px
-      line-height: 30px;//文字行高
+      padding: 20px 10px 10px 10px;
+      line-height: 30px;
     }
 
     .navbar .navbar-brand:hover,
     .navbar .navbar-brand:focus {
-      color: white;//鼠标放置在链接上的文字颜色
-      background-color: transparent;//鼠标放置在链接上的背景颜色，这里设为透明
+      color: white;
+      background-color: transparent;
     }
 
 

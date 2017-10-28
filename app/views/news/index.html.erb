@@ -6,17 +6,18 @@
 
 
 
-<div class="container-fluid">
+<div class="container-fluid" style="background-color: #FAFAFA;">
   <section id="news-info">
     <% @news.each do |news| %>
-      <div class="col-md-12" style="margin-top:3em;">
+      <div class="col-md-12" style="margin-top:4em;">
 
+        <!-- image -->
         <div class="col-md-6">
-          <div align="center">
-            <% if news.image.present? %>
-              <%= image_tag(news.image.thumb.url) %>
-            <% end %>
-          </div>
+            <div align="center">
+              <% if news.image.present?%>
+                <%= image_tag(news.image.thumb.url, :class => "news-image") %>
+              <% end %>
+            </div>
         </div>
 
         <!-- content -->
@@ -36,10 +37,12 @@
           </div>
         </div>
 
-        <hr>
-        <br>
-
       </div>
     <% end %>
+
+    <!--add 4em margin-->
+    <div class="col-md-12" style="margin-top:4em;">
+    </div>
+
   </section>
 </div>

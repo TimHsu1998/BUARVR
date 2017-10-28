@@ -1,3 +1,5 @@
+
+<!--admin panel-->
 <% if current_user && current_user.is_admin %>
   <div class="pull-right">
     <%= link_to("edit", edit_meeting_path(@meeting), :class => "btn btn-default")%>
@@ -6,44 +8,49 @@
   </div>
 <% end %>
 
-<div class="container-fluid">
-  <div class="col-md-12">
-    <section id="job-info">
+<!--content for guest-->
+<section id="meeting-info">
+  <div class="container-fluid">
+      <div class="col-md-12">
 
-      <!-- title -->
-      <div class="job-title">
-        <%= @meeting.name %>
-      </div>
+        <!-- title -->
+        <div class="meeting-title">
+          <%= @meeting.name %>
+        </div>
 
-      <!-- location -->
-      <p class="details">
+        <!-- time and location -->
         <p class="address">
           <%= @meeting.start_time.strftime("%m/%d, %I:%M %p")%>~<%= @meeting.end_time.strftime("%I:%M %p")%>
           <br>
           <i class="fa fa-location-arrow fa-fx" aria-hidden="true"></i>
           <%= @meeting.address %>
         </p>
-      </p>
 
-      <!-- description -->
-      <p class="description">
-        <%= @meeting.intro %>
-      </p>
+        <!-- description -->
+        <p class="description">
+          <%= @meeting.intro %>
+        </p>
 
 
-      <!-- show google map -->
-      <div id="map"></div>
+        <!-- show google map -->
+        <div id="map"></div>
 
-      <script src="//maps.google.com/maps/api/js?key=AIzaSyBllRAX1LEu6GwQCp-m8hOYL6mIwT7hwEI"></script>
-      <script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
+        <script src="//maps.google.com/maps/api/js?key=AIzaSyBllRAX1LEu6GwQCp-m8hOYL6mIwT7hwEI"></script>
+        <script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
 
-      <script type="text/javascript">
-      handler = Gmaps.build('Google');
-      handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-        markers = handler.addMarkers(<%=raw @hash.to_json %>);
-        handler.bounds.extendWith(markers);
-        handler.fitMapToBounds();
-      });
-      </script>
+        <script type="text/javascript">
+        handler = Gmaps.build('Google');
+        handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+          markers = handler.addMarkers(<%=raw @hash.to_json %>);
+          handler.bounds.extendWith(markers);
+          handler.fitMapToBounds();
+        });
+        </script>
+
+        <!--add 8em margin-->
+        <div class="col-md-12" style="margin-top:8em;">
+        </div>
+
+    </div>
   </div>
-</div>
+</section>
