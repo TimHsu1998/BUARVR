@@ -1,8 +1,10 @@
 .simple-calendar {
+  color: #757575;
   table {
     -webkit-border-horizontal-spacing: 0px;
     -webkit-border-vertical-spacing: 0px;
-    background-color: rgba(0, 0, 0, 0);
+    //background-color: rgba(0, 0, 0, 0);
+    background-color: #FAFAFA;
     border: 1px hidden rgb(221, 221, 221);
     border-collapse: collapse;
     box-sizing: border-box;
@@ -19,8 +21,8 @@
     padding: 6px;
     vertical-align: top;
     width: 14%;
-    border: 1px hidden #313131;
-    border-bottom: 1px solid #313131;
+    border: 1px hidden #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
     text-align: center;
     font-family:Georgia;
   }
@@ -30,21 +32,7 @@
     padding: 6px;
     vertical-align: top;
     width: 14%;
-    border: 1px solid #313131;
-
-    //border: 1px solid #ddd;
-    //border-top-color: rgb(221, 221, 221);
-    //border-top-style: solid;
-    //border-top-width: 1px;
-    //border-right-color: rgb(221, 221, 221);
-    //border-right-style: solid;
-    //border-right-width: 1px;
-    //border-bottom-color: rgb(221, 221, 221);
-    //border-bottom-style: solid;
-    //border-bottom-width: 1px;
-    //border-left-color: rgb(221, 221, 221);
-    //border-left-style: solid;
-    //border-left-width: 1px;
+    border: 1px solid #E0E0E0;
   }
 
   padding: 3em;
@@ -62,19 +50,19 @@
    .calendar-title{
      font-size: 5rem;
      //color: #BDBDBD;EEEEEE
-     color: #EEEEEE;
+     //color: #EEEEEE;
    }
 
    .calendar-last{
      text-align: left;
      //color: #BDBDBD;
-     color: #EEEEEE;
+     //color: #EEEEEE;
    }
 
    .calendar-next{
      text-align: right;
      //color: #BDBDBD;
-     color: #EEEEEE;
+     //color: #EEEEEE;
    }
 
   .day {
@@ -91,25 +79,27 @@
   .start-date {}
 
   .prev-month {
-    color: #757575;
+    //color: #757575;
   }
   .next-month {
-    color: #757575;
+    //color: #757575;
   }
   .current-month {
     //color: #BDBDBD;
-    color: #EEEEEE;
+    //color: #EEEEEE;
   }
 
   .wday-0 {
-    background: #1F2024;
-    box-shadow: 3px 3px 5px black;
-    color: #757575;
+    //background: #1F2024;
+    background-color: #F5F5F5;
+    box-shadow: 3px 3px 5px rgba(4,6,9,0.25);
+    //color: #757575;
   }
   .wday-6 {
-    background: #1F2024;
-    box-shadow: 3px 3px 5px black;
-    color: #757575;
+    //background: #1F2024;
+    background-color: #F5F5F5;
+    box-shadow: 3px 3px 5px rgba(4,6,9,0.25);
+    //color: #757575;
   }
   //.wday-1 .wday-2 .wday-3 .wday-4 .wday-5{background: #212121;}
 
@@ -118,6 +108,8 @@
 }
 //------------------------------------------
 .greybackground{
-  background-color: #18191D;
+  //background-color: #18191D;
+  background-color: #FAFAFA;
+
   border-radius: 10px;//btn圓角
 }
