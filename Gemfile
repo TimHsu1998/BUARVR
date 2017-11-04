@@ -37,8 +37,10 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'capistrano-rails'
+  gem 'capistrano-passenger'
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+  # gem 'sqlite3'
 end
 
 group :development do
@@ -51,7 +53,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -71,3 +73,4 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'figaro'
 gem 'fog'
+gem 'pg'
