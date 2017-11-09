@@ -12,7 +12,7 @@
 
         <% meetings.each do |meeting| %>
           <div>
-            <%= link_to(meeting.name, meeting_path(meeting)) %>
+            <%= link_to(meeting.name, meeting_path(meeting), :style => "color:#00C853") %>
           </div>
         <% end %>
       <% end %>
