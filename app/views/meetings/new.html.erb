@@ -1,12 +1,21 @@
-<h1> Add a event </h1>
+<section id="news-info">
+  <div class="news">
 
-<%= simple_form_for @meeting do |f| %>
+  </div>
+  <div class="col-md-12">
+    <div class="news-new">
+      <h1> Add a event </h1>
 
-<%= f.input :name %>
-<%= f.input :address %>
-<%= f.input :intro %>
-<%= f.input :start_time %>
-<%= f.input :end_time %>
+      <%= simple_form_for @meeting do |f| %>
 
-  <%= f.submit "Submit" %>
-<% end %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :intro %>
+      <%= f.input :start_time %>
+      <%= f.input :end_time %>
+
+        <%= f.submit "Submit" %>
+      <% end %>
+    </div>
+  </div>
+</section>

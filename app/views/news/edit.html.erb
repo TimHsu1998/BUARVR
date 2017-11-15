@@ -1,10 +1,19 @@
-<h1> Edit a news </h1>
+<section id="news-info">
+  <div class="news">
 
-<%= simple_form_for @news do |f| %>
+  </div>
+  <div class="col-md-12">
+    <div class="news-new">
+      <h1> Edit a news </h1>
 
-<%= f.input :title %>
-<%= f.input :content %>
-<%= f.input :image, as: :file %>
+      <%= simple_form_for @news do |f| %>
 
-  <%= f.submit "Submit" %>
-<% end %>
+      <%= f.input :title %>
+      <%= f.input :content %>
+      <%= f.input :image, as: :file %>
+
+        <%= f.submit "Submit" %>
+      <% end %>
+    </div>
+  </div>
+</section>
