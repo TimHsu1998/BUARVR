@@ -1,15 +1,16 @@
-
-<!--admin panel-->
-<% if current_user && current_user.is_admin %>
-  <div class="pull-right">
-    <%= link_to("edit", edit_meeting_path(@meeting), :class => "btn btn-default")%>
-    <%= link_to("delete", meeting_path(@meeting), method: :delete,
-                :data => { :confirm => 'Are you sure?' }, :class => "btn btn-default") %>
-  </div>
-<% end %>
-
 <!--content for guest-->
 <section id="meeting-info">
+  <!--add 8em margin-->
+  <div class="col-md-12" style="margin-top:8em;">
+  </div>
+  <!--admin panel-->
+  <% if current_user && current_user.is_admin %>
+    <div class="pull-right">
+      <%= link_to("edit", edit_meeting_path(@meeting), :class => "btn btn-default")%>
+      <%= link_to("delete", meeting_path(@meeting), method: :delete,
+                  :data => { :confirm => 'Are you sure?' }, :class => "btn btn-default") %>
+    </div>
+  <% end %>
   <div class="container-fluid">
       <div class="col-md-12">
 
