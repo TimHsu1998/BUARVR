@@ -1,12 +1,13 @@
-<% if current_user && current_user.is_admin %>
-  <div class="pull-right">
-    <%= link_to("Add a news", new_news_path, :class => "btn btn-default" ) %>
-  </div>
-<% end %>
-
-
-
 <div class="container-fluid" style="background-color: #FAFAFA;">
+  <!--add 8em margin-->
+  <div class="col-md-12" style="margin-top:8em;">
+  </div>
+  <% if current_user && current_user.is_admin %>
+    <div class="pull-right">
+      <%= link_to("Add a news", new_news_path, :class => "btn btn-default" ) %>
+    </div>
+  <% end %>
+
   <section id="news-info">
     <% @news.each do |news| %>
       <div class="col-md-12" style="margin-top:4em;">
