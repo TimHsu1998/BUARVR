@@ -2,7 +2,7 @@ class NewsController < ApplicationController
   before_action :admin_required, only: [:new, :create, :show, :edit, :destroy]
 
   def index
-    @news = News.all
+    @news = News.order("created_at DESC")
   end
 
   def new

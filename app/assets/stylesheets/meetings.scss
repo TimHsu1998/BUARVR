@@ -10,6 +10,28 @@
     padding-left: 50px;
     padding-right: 50px;
 }
+//---left side upcoming event-----
+.greybox {
+  background-color: #18191D;
+  border-radius: 10px;//btn圓角
+  height: 735px;
+  box-sizing: border-box;
+  padding: 20px;
+  font-family:Georgia;
+}
+
+.upcoming {
+  padding: 20px;
+  margin: 20px 10px;
+  text-align: center;
+  background: #1F2024;
+  box-shadow: 3px 3px 5px black;
+}
+//----calendar grey background----
+.greybackground{
+  background-color: #18191D;
+  border-radius: 10px;//btn圓角
+}
 
 //---------meeting info---------
 #meeting-info {

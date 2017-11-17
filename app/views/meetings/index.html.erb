@@ -1,21 +1,39 @@
 <div class="background">
-  <% if current_user && current_user.is_admin %>
-    <div class="pull-right">
-      <%= link_to("Add a event", new_meeting_path, :class => "btn btn-default" ) %>
-    </div>
-  <% end %>
 
   <div class="row">
-    <div class="col-md-12">
-      <%= month_calendar events: @meetings do |date, meetings| %>
-        <%= date.strftime("%m/%d") %>
+    <!--The Upcoming Events-->
+    <div class="col-md-3">
+      <div class="greybox">
+        <% @meetings.each do |meeting| %>
+          <% if in_future(meeting.start_time) %>
+            <div class="upcoming">
+              <%= link_to(meeting.name, meeting_path(meeting), :style => "color:#00C853") %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
 
-        <% meetings.each do |meeting| %>
-          <div>
-            <%= link_to(meeting.name, meeting_path(meeting), :style => "color:#00C853") %>
+    <!--The Calendar-->
+    <div class="col-md-9">
+      <div class="greybackground">
+        <% if current_user && current_user.is_admin %>
+          <div class="pull-right">
+            <%= link_to("Add a event", new_meeting_path, :class => "btn btn-default" ) %>
           </div>
         <% end %>
-      <% end %>
+        <%= month_calendar events: @meetings do |date, meetings| %>
+          <%= date.strftime("%m/%d") %>
+
+          <% meetings.each do |meeting| %>
+            <div>
+              <%= link_to(meeting.name, meeting_path(meeting), :style => "color:#00C853") %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
     </div>
+
   </div>
+
 </div>
