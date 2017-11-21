@@ -1,0 +1,45 @@
+//---------Background Image---------
+.jumbotron-about{
+    background-image: url("https://i.imgur.com/l0Odj6x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 200px;
+    padding-top: 250px;
+    font-family: "Open Sans", Arial, serif;
+}
+
+#aboutus {
+
+  font-family: "Open Sans", Arial, serif;
+  .personal-info{
+    overflow: hidden;
+    width: 750px;
+    height: 300px;
+    margin: 50px 200px;
+  }
+
+  .display-left {
+    float: left;
+    margin-right: 30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 0px
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0 0 20px 0;
+  }
+
+  p {
+    line-height: 150%;
+    margin-bottom: 0em;
+    font-size: 20px;
+    color: #727272;
+    font-weight: 500;
+  }
+
+}
