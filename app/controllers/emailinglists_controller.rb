@@ -1,5 +1,3 @@
-require 'bundler'
-Bundler.require
 class EmailinglistsController < ApplicationController
   def new
     @emailinglist = Emailinglist.new
@@ -18,7 +16,7 @@ class EmailinglistsController < ApplicationController
       # Get the first worksheet
       worksheet = spreadsheet.worksheets.fourth
       # Print out the first 6 columns of each row
-      worksheet.insert_rows(2, [[name, email]])
+      worksheet.insert_rows(2, [[email, name]])
       worksheet.save
       redirect_to root_path
     end
