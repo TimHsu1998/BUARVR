@@ -23,9 +23,27 @@
           <a class="navbar-nav" href="/aboutus">ABOUT US</a>
         </div>
         <div class="navbar-header">
-          <a class="navbar-nav" href="/">SUBSCRIPTION</a>
+          <a class="navbar-nav" href="#" data-toggle="modal" data-target="#login-modal">SUBSCRIPTION</a>
         </div>
       </ul>
     </div>
   </nav>
+</div>
+
+<!-- 以下代码添加在最后 -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog" role="document">
+    <div class="loginmodal-container">
+       <h2>Subscription</h2>
+       <%= simple_form_for(resource, as: resource_name) do |f| %>
+         <div class="form-inputs">
+           <%= f.input :email, required: true, autofocus: true %>
+           <%= f.input :name, required: true %>
+         </div>
+         <div class="form-actions">
+           <%= f.button :submit, "Submit" %>
+         </div>
+       <% end %>
+    </div>
+  </div>
 </div>

@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :news
   resources :meetings
   resources :aboutus
+  resources :emailinglists
 end
