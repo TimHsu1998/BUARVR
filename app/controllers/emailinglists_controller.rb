@@ -21,8 +21,6 @@ class EmailinglistsController < ApplicationController
       worksheet.insert_rows(2, [[name, email]])
       worksheet.save
       redirect_to root_path
-    else
-      render :new
     end
   end
 
