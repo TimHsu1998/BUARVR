@@ -14,7 +14,7 @@ class EmailinglistsController < ApplicationController
       # Get the spreadsheet by its title
       spreadsheet = session.spreadsheet_by_title("2017 member list")
       # Get the first worksheet
-      worksheet = spreadsheet.worksheets.fourth
+      worksheet = spreadsheet.worksheet_by_title("Websubscription")
       # Print out the first 6 columns of each row
       worksheet.insert_rows(2, [[email, name]])
       worksheet.save
