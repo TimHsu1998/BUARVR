@@ -1,4 +1,8 @@
 //---------Navbar---------
+header {
+  background: #555555;
+}
+
 .navbar-brand > img {
     display: inline-block;
     margin-right: 10px;
@@ -6,47 +10,47 @@
     height: 50px;
 }
 
-#navbar {
-    .navbar {
-      //background-color: #424242;
-      //border-color: #424242;
-      background-color: #F5F5F5;
-      border-color: #F5F5F5;
-      //background-color: #4B4641;
-      margin-bottom: 0;
-      padding-bottom: 15px;
-      position: fixed; /* Set the navbar to fixed position */
-      top: 0; /* Position the navbar at the top of the page */
-      width: 100%; /* Full width */
-      z-index: 1;
-    }
+.container {
+    max-width: 1240px;
+    padding: 2rem 2rem;
+    margin: 0 auto;
+}
 
-    @media (min-width: 768px) {
-      .navbar {
-          border-radius: 0;
-      }
-    }
+nav {
+    float: right;
+    text-align: right;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
 
-    .navbar .navbar-brand {
-      color: white;
-      font-size: 25pt;
-      padding: 15px 30px;
-      line-height: 30px;
-    }
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
+nav li {
+    display: inline-block;
+    padding: 0 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
 
-    .navbar .navbar-nav {
-      color: black;
-      font-size: 12pt;
-      padding: 20px 10px 10px 10px;
-      line-height: 30px;
-    }
+nav a {
+    display: block;
+    padding: 1rem 1rem;
+    color: white;
+}
 
-    .navbar .navbar-brand:hover,
-    .navbar .navbar-brand:focus {
-      color: white;
-      background-color: transparent;
-    }
-
-
+nav a:hover {
+    display: block;
+    padding: 1rem 1rem;
+    color: white;
 }

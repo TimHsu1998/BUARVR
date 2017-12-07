@@ -1,11 +1,92 @@
-//---------Footer---------
 
-footer .footer-below {
-    padding: 25px 0;
-    background-color: #F5F5F5;
-    //background-color: #424242;
+.one-col  {
+    padding: 50px;
+    font-size:18px;
+    width: 60%;}
+.one-col  .container  {
+    color: #555555;
+    text-align: center;
+}
+.three-col {
+    color: #f2f2f2;
+    font-size:15px;
+}
+.two-col {
+    background: white;
+    color: #555555;
+    font-size:15px;
 }
 
-footer .space {
-    margin-top: 3em;
+.two-col, .three-col {
+    padding: 2rem 0;
 }
+
+.three-col .container div, footer .container div  {
+    float: left;
+    width: 33.333%;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.two-col .container div{
+    float: left;
+    width: 50%;
+    padding: 3rem 3rem;
+}
+
+//-------footer-------
+footer {
+    padding: 6rem 0;
+    color: white;
+    border-bottom: 4px solid #E71D36;
+    background: #555555;
+    color: white;
+}
+
+footer h5 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #E71D36;
+    font-size: 18px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+footer address {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+footer li {
+    margin-left: 5px;
+    display: inline-block;
+}
+
+footer li:first-child {
+    margin-left: 0;
+}
+
+footer li a img{
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    margin: 5px 2px;
+    display: inline-block;
+    //box-shadow: 0px 0px 3px 0px black;
+    border: 2px solid #424242;
+}
+
+/*
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+*/
