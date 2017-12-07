@@ -1,17 +1,3 @@
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Lato', sans-serif;
-  line-height: 1.6;
-  background-color: #f2f2f2;
-}
-
-//-------------------
-
-
 .thumbnail {
     border: 0 none;
     box-shadow: none;
@@ -66,35 +52,30 @@ body {
     padding: 10px 50px;
 }
 
-
-
-/* Typography & Button Styling */
-
-h1, h2, h3, h4, h5, nav, .button {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-}
-
 h1 {
   font-size: 4rem;
   margin-bottom: 1.5rem;
+  font-family: 'Oswald', sans-serif;
 }
 
 h2 {
   margin: 1.5rem 1rem 2rem;
   text-align: center;
   font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
 }
 
 h3 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
-     text-decoration: underline;
+  text-decoration: underline;
+  font-family: 'Oswald', sans-serif;
 }
 
 h5 {
    color: #E71D36;
    margin-bottom: 0.5rem;
+   font-family: 'Oswald', sans-serif;
 }
 
 p {
