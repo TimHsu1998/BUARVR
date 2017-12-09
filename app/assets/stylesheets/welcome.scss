@@ -1,162 +1,13 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-//----------for all---------
-.lead {
-    font-family: Hectiva;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-
-//---------Cover---------
-
-.jumbotron {
-    background-image: url("https://i.imgur.com/ZPniGoF.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 110px;
-}
-
-.title {
-    max-width: 700px;
-    margin-top: 0;
-    margin-bottom: 0;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-}
-
-.jumbotron h2, .jumbotron .h2 {
-    font-family:Georgia;
-    text-align: justify;
-    font-size: 35pt;
-    color: white;
-    padding: 0px 50px 0 50px;
-}
-
-.jumbotron p {
-    font-family:Georgia;
-    margin: 0;
-    font-size: 24px;
-    max-width: 700px;
-    padding: 20px 50px 20px 50px;
-    text-align:justify;
-    color: white;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-
-}
-
-
-.lp-block-1-button {
-    border-radius: 3px;
-    background: transparent;
-    display: inline-block;
-    border: 2px solid #fff;
-    color: #fff;
-    line-height: 1;
-    text-align: center;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 14px 30px 13px;
-    margin-right: 10px;
-    margin-top: 20px;
-    }
-.lp-block-1-button:hover{
-    background-color: white;
-    text-decoration: none;
-  }
-
-//---------Introduction---------
-.content-section-a {
-    text-align: center;
-    margin-top: -3rem;
-    padding: 5rem 5rem 5rem 5rem;
-    border-bottom: 1px solid #e7e7e7;
-    background-color: #f8f8f8;
-}
-
-.section-heading-a {
-    font-family: Arial Black;
-    margin-bottom: 25px;
-}
-
-//-----Benefits(What we provide)-----
-.content-section-b {
-    text-align: center;
-    padding: 40px 0;
-}
-
-.section-heading-b {
-    font-family: Arial Black;
-    margin-bottom: 40px;
-}
-
-.section-feature-b {
-    font-family: Arial Black;
-}
-
-#testimony {
-    padding: 5rem 0 5rem 0;
-    text-align: center;
-    position: relative;
-
-    .testimony p {
-      margin-top: 2em;
-      margin-bottom: 1em;
-    }
-
-    .testimony {
-      width: 22.75%;
-      display: inline-block;
-      margin: 0 1% 0;
-      padding: 2.5rem 1.5%;
-      text-align: center;
-      -webkit-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
-      -moz-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
-      box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
-      border-radius: .35rem;
-    }
-
-    .button_wrapper {
-      text-align: center;
-      margin: 4rem 0;
-      display: inline-block;
-    }
-}
-
-//---------Second Cover---------
-.jumbotron-second {
-    background-image: url("https://i.imgur.com/SVZg1BU.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 150px;
-    padding-top: 150px;
-}
-
-.alignCenter
-{
-    text-align: center;
-    margin: 100px;
-}
-
-//---------Q&A---------
-
-.caption {
-    margin: 10 50 10 50px;
-}
-
 .thumbnail {
     border: 0 none;
     box-shadow: none;
     border: none;
+    background-color: #f2f2f2;
 }
 
 .content-section-c {
-    padding: 40px 200px;
+    padding: 100px 200px;
+    background-color: #f2f2f2;
 }
 
 .section-title-c {
@@ -168,4 +19,148 @@
     font-family:Georgia;
     font-weight: bold;
     margin-bottom: 10px;
+}
+//-------------------
+.three-col {
+  background: #E71D36;
+  color: #f2f2f2;
+     font-size:15px;
+}
+.two-col {
+  background: white;
+  color: #555555;
+  font-size:15px;
+}
+
+.two-col, .three-col {
+  padding: 2rem 0;
+}
+
+.three-col .container div, footer .container div  {
+  float: left;
+  width: 33.333%;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.two-col .container div{
+  float: left;
+  width: 50%;
+  padding: 3rem 3rem;
+}
+.questions{
+    padding: 10px 50px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  margin: 1.5rem 1rem 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  font-family: 'Oswald', sans-serif;
+}
+
+h5 {
+   color: #E71D36;
+   margin-bottom: 0.5rem;
+   font-family: 'Oswald', sans-serif;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #E71D36;
+}
+
+li {
+  display: inline-block;
+}
+
+.three-col .fa {
+  font-size: 5.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  border: 2px solid #E71D36;
+  padding: 1.5rem 3rem;
+  color: #f2f2f2;
+}
+
+.button:hover {
+  background: #E71D36;
+  color: white;
+}
+
+
+/* HERO-SPECIFIC */
+
+.hero {
+  position: relative;
+  background-image: url(https://preview.ibb.co/fsPpAG/gabriel_barletta_87524.jpg);
+  //background-image: url(https://thumb.ibb.co/dP3PAG/samuel_zeller_158996.jpg);
+  background-repeat: no-repeat;
+  background-position: center -50px;
+  background-size: cover;
+  height: 600px;
+}
+
+.hero__overlay {
+  position: absolute;
+  background-color: rgba(1, 22, 39, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.hero__divider {
+  width: 250px;
+  height: 4px;
+  background-color: #E71D36;
+  margin: 2rem auto 2.5rem;
+}
+
+.hero__content {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero__content p {
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  font-size: 3rem;
+  font-weight: 300;
+  color: white;
+}
+
+.hero__content h1 {
+  color: white;
+  font-size: 7rem;
 }
