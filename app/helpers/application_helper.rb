@@ -1,9 +1,9 @@
 module ApplicationHelper
-  def resource_name
+  def new_email_name
     :emailinglist
   end
 
-  def resource
+  def new_email
       @resource ||= Emailinglist.new
   end
 

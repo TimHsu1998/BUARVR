@@ -25,7 +25,7 @@
   <div class="modal-dialog" role="document">
     <div class="loginmodal-container">
        <h2>Subscription</h2>
-       <%= simple_form_for(resource, as: resource_name) do |f| %>
+       <%= simple_form_for(new_email, as: new_email_name) do |f| %>
          <div class="form-inputs">
            <%= f.input :email, required: true, autofocus: true %>
            <%= f.input :name, required: true %>
