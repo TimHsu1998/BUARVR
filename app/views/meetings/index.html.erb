@@ -1,5 +1,4 @@
 <div class="background">
-
   <div class="row">
     <!--The Upcoming Events-->
     <div class="col-md-3">
@@ -17,11 +16,6 @@
     <!--The Calendar-->
     <div class="col-md-9">
       <div class="greybackground">
-        <% if current_user && current_user.is_admin %>
-          <div class="pull-right">
-            <%= link_to("Add a event", new_meeting_path, :class => "btn btn-default" ) %>
-          </div>
-        <% end %>
         <%= month_calendar events: @meetings do |date, meetings| %>
           <%= date.strftime("%m/%d") %>
 
