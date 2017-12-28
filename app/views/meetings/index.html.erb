@@ -3,6 +3,9 @@
     <!--The Upcoming Events-->
     <div class="col-md-3">
       <div class="greybox">
+        <div class="text-center">
+          <h1 style="color:white;">Upcoming</h1>
+        </div>
         <% @meetings.each do |meeting| %>
           <% if in_future(meeting.start_time) %>
             <div class="upcoming">
