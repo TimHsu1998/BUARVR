@@ -11,6 +11,19 @@
 #aboutus {
 
   font-family: "Open Sans", Arial, serif;
+  
+  .container{
+    float: left;
+    width: 33%;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .advisor{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
   .personal-info{
     overflow: hidden;
     width: 750px;
