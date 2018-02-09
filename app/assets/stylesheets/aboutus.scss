@@ -11,7 +11,7 @@
 #aboutus {
 
   font-family: "Open Sans", Arial, serif;
-  
+
   .container{
     float: left;
     width: 33%;
@@ -55,4 +55,13 @@
     font-weight: 500;
   }
 
+}
+
+hr
+{
+border:solid 10px black;
+width: 70%;
+color: black;
+height: 3px;
+border: 0 none;
 }
