@@ -1,0 +1,30 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.three-col-project {
+  background: #FAFAFA;
+  //color: #f2f2f2;
+     font-size:15px;
+}
+.two-col {
+  background: white;
+  color: #555555;
+  font-size:15px;
+}
+
+.two-col, .three-col-project {
+  padding: 2rem 0;
+}
+
+.three-col-project .container div, footer .container div  {
+  float: left;
+  width: 33%;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.three-col-project .fa {
+  font-size: 5.5rem;
+  margin-bottom: 1.5rem;
+}

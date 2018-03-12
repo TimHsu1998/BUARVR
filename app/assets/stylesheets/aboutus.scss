@@ -55,13 +55,11 @@
     font-weight: 500;
   }
 
-}
+  hr {
+    width: 85%;
+    border: 0;
+    height: 1px;
+    background: #333;
+  }
 
-hr
-{
-border:solid 10px black;
-width: 70%;
-color: black;
-height: 3px;
-border: 0 none;
 }
